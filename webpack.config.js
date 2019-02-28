@@ -1,12 +1,15 @@
 
 const path = require('path');
+// html提取
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+// 清除指定目录
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+// webpack4.0以后，vueLoader需要单独加入plugins
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+// 抽离css
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = (env,arg) => {
-    console.log(arg);
     return {
         entry:{
             index:'./src/index.js',
@@ -63,6 +66,7 @@ module.exports = (env,arg) => {
                     use:[{
                         loader:'url-loader',
                         options:{
+                            // limit:5000,
                             limit:5,
                             outputPath:'static/images/',
                         }
