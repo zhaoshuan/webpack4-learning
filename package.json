@@ -1,0 +1,46 @@
+{
+  "name": "webpack4-learning",
+  "version": "1.0.0",
+  "description": "测试",
+  "main": "zhaoshuan",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --inline --progress",
+    "stag": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaoshuan/webpack4-learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhaoshuan/webpack4-learning/issues"
+  },
+  "homepage": "https://github.com/zhaoshuan/webpack4-learning#readme",
+  "dependencies": {
+    "vue": "^2.6.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.9",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^1.0.1",
+    "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "vue-loader": "^15.6.4",
+    "vue-template-compiler": "^2.6.7",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
