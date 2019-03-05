@@ -13,6 +13,7 @@ module.exports = (env,arg) => {
     return {
         entry:{
             index:'./src/index.js',
+            zhao:'./src/zhao.js',
         },
         output:{
             path:path.resolve(__dirname,'dist'),
@@ -77,7 +78,13 @@ module.exports = (env,arg) => {
         plugins:[
             new HtmlWebPackPlugin({
                 template: "./src/index.html",
-                filename: "./index.html"
+                filename: "./index.html",
+                chunks:['index','common'],
+            }),
+            new HtmlWebPackPlugin({
+                template: "./src/zhao.html",
+                filename: "./zhao.html",
+                chunks:['zhao','common'],
             }),
             new CleanWebpackPlugin(['dist']),
             new VueLoaderPlugin(),
